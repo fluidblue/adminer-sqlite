@@ -1,6 +1,6 @@
 # adminer-sqlite
 
-Use [adminer](https://www.adminer.org) with an [sqlite3](https://sqlite.org) database.
+Use [adminer](https://www.adminer.org) with a local [sqlite](https://sqlite.org) database.
 
 ## Usage
 
