@@ -38,3 +38,10 @@ Username: <empty>
 Password: <your password>
 Database: /db/db.sqlite3
 ```
+
+## License
+
+Copyright (C) 2023 Max Geissler
+
+This program is free software, licensed under the GNU General Public License (GPL) v3.0 or later.
+Please see the [License](LICENSE.md) for further information.
