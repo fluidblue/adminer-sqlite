@@ -1,16 +1,20 @@
 # adminer-sqlite
 
-Use [adminer](https://www.adminer.org) with a local [sqlite](https://sqlite.org) database.
+With adminer-sqlite you can use [adminer](https://www.adminer.org) with a local [sqlite](https://sqlite.org) database.
 
 ## Usage
 
-1. Download adminer-sqlite
+Hint: The following usage instructions are written for macOS and Linux. On Windows, the commands must be adapted.
+
+1. Download and install [Docker](https://www.docker.com/).
+
+2. Download adminer-sqlite
 ```
 git clone https://github.com/fluidblue/adminer-sqlite.git
 cd adminer-sqlite
 ```
 
-2. Copy database to `db` directory -or- create symbolic link to database
+3. Copy your database to `db` directory -or- create a symbolic link to the database
 ```
 # Option 1
 cp /path/to/db.sqlite3 ./db/db.sqlite3
@@ -19,15 +23,15 @@ cp /path/to/db.sqlite3 ./db/db.sqlite3
 ln -s /path/to/db.sqlite3 ./db/db.sqlite3
 ```
 
-3. Set a new password in `docker-compose.yml` (environment variable `ADMINER_PASSWORD`).
+4. Set a new password in `docker-compose.yml` (environment variable `ADMINER_PASSWORD`).
 Note: You can't use an empty password.
 
-4. Docker compose
+5. Use Docker compose to start the container
 ```
 docker-compose up -d
 ```
 
-5. Go to http://localhost:8080 and enter the following
+6. Go to http://localhost:8080 and enter the following
 ```
 System: SQLite 3
 Username: <empty>
