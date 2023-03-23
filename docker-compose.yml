@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    adminer:
+        image: adminer
+        ports:
+            - 127.0.0.1:8080:8080
+        environment:
+            ADMINER_PASSWORD: "YOUR_PASSWORD_HERE"
+        volumes:
+            - ./db:/db
+            - ./plugins-enabled:/var/www/html/plugins-enabled
