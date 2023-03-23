@@ -1,5 +1,7 @@
 # adminer-sqlite
 
+Use [adminer](https://www.adminer.org) with a [sqlite3](https://sqlite.org) database.
+
 ## Usage
 
 1. Copy database to `db` directory -or- create symbolic link to database
