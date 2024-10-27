@@ -28,7 +28,7 @@ Note: You can't use an empty password.
 
 5. Use Docker compose to start the container
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 6. Go to http://localhost:8080 and enter the following
